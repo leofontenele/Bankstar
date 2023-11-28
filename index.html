@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="https://kit.fontawesome.com/9e237af436.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="dark-mode-toggle" onclick="toggleDarkMode(); bodyDarkMode(); iconDarkMode();">
+        <div class="toggle-button"></div>
+        <p class="dark-mode-text">night mode.</p>
+      </div>
+  <div class="main">
+  <form action="" method="POST" class="login">
+    <h2 class="bankstar"><i class="icone2 fa-solid fa-hippo"></i> bankstar.</h2>
+    <div class="login-field">
+    <i class="icone fa-solid fa-user"></i>
+    <input type="text" id="username" name="username" class="login-input" placeholder="digite a sua senha." required><br><br>
+    </div>
+    <div class="login-field">
+    <i class="icone1 fa-solid fa-lock"></i>
+    <input type="password" id="password" name="password" class="login-input"placeholder="digite a sua password."  required><br><br>
+    </div>
+    <button type="submit" class="botao-login" value="entrar">
+      <span class="textobotao">entrar</span>
+      <i class="fa-solid fa-arrow-right"></i>
+ </button>
+ <div class="icons">
+  <i class="icone3 fa-brands fa-facebook"></i>
+  <i class="icone3 fa-brands fa-linkedin"></i>
+  <i class="icone3 fa-brands fa-google"></i>
+ </div>
+  </form>
+</div>
+<script>
+    function bodyDarkMode() {
+      const body = document.body;
+      const main = document.querySelector('.main');
+      body.classList.toggle('body-dark-mode');
+      main.classList.toggle('body-dark-mode');
+    }
+    function iconDarkMode() { 
+      const icone = document.querySelector('.icone');
+      const icone1 = document.querySelector('.icone1');
+      const icone2 = document.querySelector('.bankstar');
+      const icone3 = document.querySelector('.icons');
+      const botaologin = document.querySelector('.botao-login');
+      const input = document.querySelector('.login-input');
+      icone.classList.toggle('icon-dark-mode');
+      icone1.classList.toggle('icon-dark-mode');
+      icone2.classList.toggle('icon-dark-mode');
+      icone3.classList.toggle('icon-dark-mode');
+      botaologin.classList.toggle('icon-dark-mode');
+      input.classList.toggle('icon-dark-mode');
+    }
+let isDarkMode = false;
+function toggleDarkMode() {
+  const darkModeToggle = document.querySelector('.dark-mode-toggle');
+  darkModeToggle.classList.toggle('dark-mode');
+  isDarkMode = !isDarkMode;
+}
+
+  </script>
+</body>
+</html>

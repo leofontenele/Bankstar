@@ -1,0 +1,147 @@
+
+body {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective:800px;
+    height: 100vh;
+    margin:0;
+    overflow: hidden;
+    font-family: 'Gudea', sans-serif;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#EA5C54 ), color-stop(100%,#bb6dec)); /* Chrome e Safari */
+    background: -webkit-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); /* Chrome e Safari (antigo) */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 ); /* Internet Explorer */
+    ::-webkit-input-placeholder {
+      color: #4E546D
+    }
+}
+.main { 
+     display: flex; /* transforma os .cards em containers flexiveis e para organizar a distribuição de espaço */
+     justify-content: center;
+     align-items: center;
+     flex-direction: column; /* definir o eixo da flex (horizontal, vertical etc) */
+     border-radius: 10px 10px;
+     padding-bottom: 10px;
+     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#EA5C54 ), color-stop(100%,#bb6dec)); /* Chrome e Safari */
+     width: 25%;
+     height: 300px;
+     box-shadow: 0px 3px 80px 20px black;
+    }
+    .dark-mode-toggle {
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 2s;
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+      
+      .toggle-button {
+        width: 26px;
+        height: 26px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        transition: 2s;
+      }
+      
+      .dark-mode {
+        background-color: #333;
+        transition: 2s;
+      }
+      
+      .dark-mode .toggle-button {
+        left: calc(100% - 28px);
+        background-color: #fff;
+        transition: 2s;
+      }
+      .body-dark-mode { 
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#222121 ), color-stop(100%,#636363));
+        transition: background 2s;
+      }
+
+   .icon-dark-mode { 
+    color: white;
+    transition: 2s;
+   }
+    .main h2 { 
+        display: flex;
+        transition: 2s;
+    }
+    .icone2 { 
+        padding-left: 20px;
+    }
+    .main h2:hover { 
+        color: aqua;
+        transition: 0.5s;
+    }
+    .login-field { 
+        display: flex;
+    }
+    .login-input {
+        border: none;
+        border-bottom: 2px solid #D1D1D4;
+        background: none;
+        padding: 10px;
+        font-weight: 700;
+        width: 80%;
+        transition: 0.5s;
+  }
+    
+    .login-input:active,
+    .login-input:focus,
+    .login-input:hover {
+        outline: none;
+        border-bottom-color: #6A679E;
+    }
+    .icone, .icone1 { 
+        float: left;
+        padding-top: 12px;
+        padding-right: 8px;
+        transition: 2s;
+    }
+    .icone:hover, .icone1:hover { 
+        color: aqua;
+        transition: 0.5s;
+    }
+    .botao-login { 
+        width: 140px;
+        border-radius: 20px 20px;
+        background: none;
+        padding: 4px 7px 4px 7px;
+        margin-top: 25px;
+        margin-left: 25px;
+        font-family: 'Gudea', sans-serif;
+        font-weight: 600;
+        transition: 2s;
+    }
+    .botao-login:hover { 
+        cursor: grab;  
+        box-shadow: 2px 2px 2px black;
+        transition: 0.8s;
+        background-color: rgba(255, 255, 255, 0.165);
+
+    }
+.icons { 
+    padding-left: 70px;
+    padding-top: 20px;
+    transition: 2s;
+}
+.icone3:hover { 
+    color:aqua;
+    transition: 0.5s;
+}
+.dark-mode-text { 
+    padding-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: burlywood;
+}
